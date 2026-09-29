@@ -3,10 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>practice 9</title>
+    <title>Practice 8</title>
 </head>
 <body>
-    <!-- iframe -->
-    <iframe src="https://www.example.com" width="600" height="400"></iframe>
+    <!-- Full Form-->
+     <fieldset>
+        <legend>Enquiry Form</legend>
+     <form action="">
+        <label>Name:</label><br>
+        <input type="text" required min="3" max="40" pattern="[a-zA-Z ] {3,40}" name="name"placeholder="Name">
+        <br><br>
+        <label>Email:</label><br>
+        <input type="email" name="email" placeholder="Email">
+        <br><br>
+        <label>Password:</label><br>
+        <input type="password" name="password" placeholder="Password">
+        <br><br>
+        <label>Phone:</label><br>
+        <input type="tel" pattern="[0-9]{10}" title="Enter the valid phone number" name="phone" placeholder="Enter the Phone number">
+        <br><br>
+        <label>Message:</label><br>
+        <textarea name="message" placeholder="Your message here..."></textarea>
+        <br><br>
+        <label>Gender:</label><br>
+        <input type="radio" name="gender" value="male">Male
+        <input type="radio" name="gender" value="female">Female
+        <br><br>
+        <label>Courses:</label><br>
+        <input type="checkbox" name="courses" value="Html5">Html5
+        <input type="checkbox" name="courses" value="CSS3">CSS3
+        <input type="checkbox" name="courses" value="JavaScript">Javascript
+        <br><br>
+        <label>Photo</label><br>
+        <input type="file" name="photo">
+        <br><br>
+         <label>Country</label><br>
+         <select name="country">
+            <option value="Pakistan">Pakistan</option>
+            <option value="USA">USA</option>
+            <option value="UK">UK</option>
+         </select>
+        <br><br>
+        <label>Course</label><br>
+        <select name="Course">
+            <optgroup label="Frontend">
+            <option value="Html5">Html5</option>
+            <option value="CSS3">CSS3</option>
+            <option value="Javascript">JavaScript</option>
+            </optgroup>
+            <optgroup label="Backend">
+                <option value="PHP">PHP</option>
+                <option value="Python">Python</option>
+                </optgroup>
+        </select>
+        <br><br><br>
+        <label>QTY</label>
+        <input type="number" name="qty" min="1" max="10">
+        <br><br>
+        <label>Select date</label>
+         <input type="date" name="date">
+         <br><br>
+         <label>Select Time</label>
+         <input type="time" name="time">
+         <br><br>
+         <label>Select week</label>
+         <input type="week" name="week">
+         <br><br>
+         <label>Select Month</label>
+         <input type="month" name="month">
+         <br><br>
+         <label>Select Color</label>
+         <input type="color" name="color">
+         <br><br>
+      <label>Range</label>
+      <input type="range" name="range" min="1" max="100">
+      <br><br>
+      <label>Search</label>
+      <input type="search" name="search">
+      <br><br>
+      <label>URL</label>
+      <input type="url" name="url">
+      <br><br>
+      <label>Courses</label>
+      <input type="text" list="Courses"/>
+      <datalist id="Courses">
+        <option value="Html5">
+        <option value="CSS3">
+        <option value="JavaScript">
+       </datalist>
+      <br><br>
+      <input type="reset" value="Reset">
+      <input type="submit" value="Submit">
+      <button type="button">Submit</button>
+     </form>
+</fieldset>
 </body>
 </html>
